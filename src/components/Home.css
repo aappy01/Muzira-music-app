@@ -1,0 +1,114 @@
+
+
+.music-home-container {
+    width: 80%;
+    height: 100vh;
+}
+
+.topbar-menu-container {
+    height: 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem 0;
+}
+
+.search-box-content {
+    position: relative;
+    width: 45%;
+    height: 24px;
+    border: 2px solid #D9D9D9;
+    border-radius: 5px;
+    padding: 15px 16px 15px 16px;
+    display: flex;
+    gap: 26px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#search-bar {
+    width: 90%;
+    height: 24px;
+    background: transparent;
+    color: #d6d6d6;
+    border: none;
+    outline: none;
+}
+
+#search-bar::placeholder {
+    color: #7A7A7A;
+}
+
+.alert-and-profile-content {
+    /* background-color: violet; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem
+}
+
+.profile-container {
+    border: 1px solid #7A7A7A;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/* Categories Style */
+.categories {
+    position: relative;
+
+}
+
+.categories-container {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0rem 0;
+}
+
+.c-heading {
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+
+}
+
+.song-categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    width: 80%;
+    margin: 1rem auto 0;
+}
+
+.songs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #660099;
+    padding: 10px;
+    color: #fff;
+}
+
+.artist-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.cover-img {
+    height: 80px;
+}
+
+.artist-container .song-name,
+.singer {
+    font-size: 13px;
+}
