@@ -23,10 +23,7 @@ export default function Playlist() {
 	const playPlaylist = (id) => {
 		navigate('/library',{ state:{id:id}})
 	}
-	// const routeChange= () => {
-	// 	let path = `/library`
-	// 	navigate(path)
-	// }
+	
 	return (
 		<section class="music-home-container">
 			<TopMenu />

@@ -7,9 +7,10 @@ export default function SongQueue({tracks,setCurrentIndex}) {
 	return( 
     <div className="q-container">
         <div className='queue-list'>
-            {tracks?.map((track) => (
-                <div className='song-info'>
+            {tracks?.map((track,index) => (
+                <div className='song-info' onClick={()=> setCurrentIndex(index)}>
                     <div className='artist-info'>
+                        <span className='song-no'>{index + 1}</span>
                         <img src={track?.track?.album?.images[2]?.url} alt='' />
                         <div className="song-data">
                             <span className='song-title'>{track?.track?.name}</span>

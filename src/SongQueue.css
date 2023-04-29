@@ -16,12 +16,17 @@
 }
 
 .song-info{
+    padding: 5px;
     /* background-color: skyblue; */
     display: grid;
     grid-template-columns: 2fr 1fr 0.5fr;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    cursor: pointer;
+}
+.song-no{
+    color: #adadad;
 }
 .song-info p{
     /* background-color: thistle; */
@@ -33,6 +38,14 @@
     justify-content: flex-start;
     align-items: center;
     gap:15px;
+    font-size: 15px;
+
+}
+.song-title{
+    font-size: 18px;
+}
+.singers,.time{
+    color:#adadad;
 }
 .song-data{
     display: flex;

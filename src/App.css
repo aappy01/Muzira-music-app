@@ -1,5 +1,14 @@
 .App{
     display: flex;
     overflow: none;
-
+}
+.audio{
+    position: fixed;
+    bottom: 5%;
+    left:35%;
+    color:white;
+    width: 50%;
+    margin: 0 auto;
+    background-color: purple;
+    height: 50px;
 }

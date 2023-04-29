@@ -23,14 +23,17 @@ main{
 }
 .rectangle::-webkit-scrollbar {
     width: 5px;
+    border-top-right-radius: 5px
 }
 
 .rectangle::-webkit-scrollbar-track {
-    background-color: #ddd;
+    border-top-right-radius: 5px;
+    background-color: transparent;
 }
 
 .rectangle::-webkit-scrollbar-thumb {
     background-color: purple;
+    border-radius: 5px
 }
 
 .rectangle-heading {
@@ -50,3 +53,4 @@ main{
 .rectangle-heading span:active {
     color: #fff;
 }
+

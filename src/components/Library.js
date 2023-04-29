@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import TopMenu from '../TopMenu';
 import SongQueue from '../SongQueue';
+import AudioPlayer from './AudioPlayer';
 import './Library.css';
 import apiClient from '../spotify';
 
@@ -21,6 +22,10 @@ export default function Library() {
 		}
 	}, [location.state]);
 
+	useEffect(() => {
+		setCurrentTrack(tracks[currentIndex]?.track);
+	}, [currentIndex, tracks]);
+
 	return (
 		//   <!-- =========================library section=========================== -->
 		<main>
@@ -37,6 +42,7 @@ export default function Library() {
 				<div className="rectangle">
 					<SongQueue tracks={tracks} setCurrentIndex={setCurrentIndex} />
 				</div>
+				
 			</section>
 		</main>
 	);
