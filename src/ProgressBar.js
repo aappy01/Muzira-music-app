@@ -1,12 +1,11 @@
-import React from 'react'
+import React from 'react';
+import './ProgressBar.css'
 
-const Bar = ({percentage,color,size,strokeWidth}) =>{
-    // strokePer = (100 - Math.round(percentage))/100
-}
-export default function ProgressBar({percentage,isPlaying, size,color}) {
-  return (
-    <div>
-        
+export default function ProgressBar({isPlaying }) {
+  const proClass = isPlaying ? "box": "box";
+	return( 
+    <div className='box-container'>
+      <div className={`${proClass}`}></div>
     </div>
-  )
+  );
 }

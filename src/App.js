@@ -18,7 +18,7 @@ import { setClientToken } from './spotify';
 
 function App() {
 	const [token, setToken] = useState(' ');
-
+	
 	useEffect(() => {
 		const token = window.localStorage.getItem('token');
 		const hash = window.location.hash;
@@ -53,9 +53,7 @@ function App() {
 					<Route path="/user" element={<UserProfile />} />
 					<Route path="/settings" element={<Settings />} />
 				</Routes>
-				<div className="audio">
-					<AudioPlayer />
-				</div>
+				
 			</div>
 		</Router>
 	);

@@ -3,7 +3,8 @@
     height: 80%;
     margin: 1rem auto 0;
     padding-top: 1.5rem;
-    background-color: #1AC552;
+    overflow-y: auto;
+    /* background-color: #1AC552; */
 }
 
 .playlist-items{
