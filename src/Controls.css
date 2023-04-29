@@ -1,0 +1,29 @@
+.control-wrapper{
+  width: 80%;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.action-btn{
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.action-btn:hover{
+  transform: scale(1.05);
+}
+
+.play-pause-btn{
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

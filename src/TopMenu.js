@@ -23,19 +23,19 @@ export default function TopMenu() {
 					style={{ height: '18px', color: '#7A7A7A' }}
 				/>
 				<input
-					type="input"
+					type="text"
 					placeholder="Artist, Song, Lyrics and more"
-					onKeyPress={event => {
-						if(event.key == "Enter") {
-							console.log("User pressed Search")
+					// onKeyPress={event => {
+					// 	if(event.key == "Enter") {
+					// 		console.log("User pressed Search")
 
-						}
-					}}
-					onChange ={event => setSearchInput(event.target.value)}
+					// 	}
+					// }}
+					// onChange ={event => setSearchInput(event.target.value)}
 				/>
-				<button  onClick={event => { console.log("Clicked Button")}}>
+				{/* <button  onClick={event => { console.log("Clicked here")}}>
 					Search
-				</button>
+				</button> */}
 			</div>
 
 			<div class="alert-and-profile-content">
