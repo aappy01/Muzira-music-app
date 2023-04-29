@@ -42,6 +42,9 @@ export default function Library() {
 				<div className="rectangle">
 					<SongQueue tracks={tracks} setCurrentIndex={setCurrentIndex} />
 				</div>
+				<div className="audio">
+					<AudioPlayer currentTrack={currentTrack} total={tracks} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex}/>
+				</div>
 				
 			</section>
 		</main>
