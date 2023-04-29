@@ -1,0 +1,81 @@
+.playlist-container{
+    width:90%;
+    height: 80%;
+    margin: 1rem auto 0;
+    padding-top: 1.5rem;
+}
+
+.playlist-items{
+    /* background-color: #1AC552; */
+    position: relative;
+    width:100%;
+    height:fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem auto 0;
+    column-gap: 4rem;
+    
+
+
+}
+.playlist-card{
+    position: relative;
+    height: fit-content;
+    background-color: #141414;
+    height: fit-content;
+    color:#fff;
+    width:100%;
+    transition:all 0.3s ease;
+}
+.play-fade{
+    /* background-color: #1ac5533b; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    position: absolute;
+    bottom: 0%;
+    width:100%;
+    height:100%;
+    right:0%;
+    opacity: 0;
+    padding: 0 0.5rem 0.5rem 0;
+}
+.playlist-card:hover{
+    transform: scale(1.02);
+}
+.playlist-card:hover .play-fade:hover{
+    opacity: 1;
+}
+/* .play-fade{
+    background-color: #1ac5533b;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.playlist-card img{
+    display: block;
+    width: 100%;
+    height: 250px;
+}
+.card-details{
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+    padding: 10px;
+    color:#fff;
+}
+.card-details p{
+    font-size: 13px;
+}
+.s-num,.s-artist{
+    color:#1AC552;
+}

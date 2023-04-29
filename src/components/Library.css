@@ -2,63 +2,9 @@ main{
     height: 100vh;
     width: 80%;
 }
-#library {
+.library {
     background: #000000;
     position: relative;
-}
-
-.background-circles {
-    position: absolute;
-    left: 261.66px;
-    top: 31px;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    transform: rotate(306.63deg);
-}
-
-.background-circles div {
-    padding: 10px;
-}
-
-.background-circles2 {
-    position: absolute;
-    right: 151.66px;
-    bottom: 11px;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    transform: rotate(120.63deg);
-}
-
-.background-circles2 div {
-    padding: 10px;
-}
-
-.big-circ {
-    width: 213.82px;
-    height: 213.82px;
-}
-
-.small-circ {
-    width: 88.24px;
-    height: 88.24px;
-}
-
-.small-circ2 {
-    width: 88.24px;
-    height: 88.24px;
-}
-
-.small-circ3 {
-    width: 57.7px;
-    height: 57.7px;
-
-}
-
-.small-circ4 {
-    width: 23.76px;
-    height: 23.76px;
 }
 
 .rectangle {
@@ -72,6 +18,19 @@ main{
     border: 1px solid #660099;
     border-radius: 8px;
     margin: 0 auto  ;
+    overflow-y: auto;
+    color:#fff;
+}
+.rectangle::-webkit-scrollbar {
+    width: 5px;
+}
+
+.rectangle::-webkit-scrollbar-track {
+    background-color: #ddd;
+}
+
+.rectangle::-webkit-scrollbar-thumb {
+    background-color: purple;
 }
 
 .rectangle-heading {
