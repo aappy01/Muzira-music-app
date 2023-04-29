@@ -15,11 +15,12 @@
     height: 50px;
 }
 .duration-container{
-    width: 100%;
-    /* background-color: tomato; */
+    width: 85%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    gap:10px;
 }
 .duration{
     font-size: 14px;

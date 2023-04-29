@@ -16,7 +16,7 @@ export default function Controls({
 		handlePrev={handlePrev}
 		// total={total}
 		/>
-	return <IconContext.Provider value={{size:"35px", color:""}}>
+	return(<IconContext.Provider value={{size:"35px", color:""}}>
 		<div className="controls-wrapper">
 			<div className="action-btn" onClick={handlePrev}>
 				<IoPlaySkipBack/>
@@ -35,6 +35,6 @@ export default function Controls({
 
 	</IconContext.Provider>
 
-		
+	);
 	
 }

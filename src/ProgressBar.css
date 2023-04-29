@@ -1,11 +1,11 @@
 .box-container{
     background-color: slategray;
-    width: 80%;
+    width: 90%;
     border-radius: 10px;
 }
 .box{
     width: 10%;
     height: 5px;
-    background-color:#fff;
+    background-color:#660099;
     border-radius: 10px;
 }
