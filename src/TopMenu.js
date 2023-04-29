@@ -4,7 +4,10 @@ import alertIcon from './assets/img/notification-icon.svg';
 import female from './assets/img/female-img.png';
 import React,{useState,useEffect} from 'react'
 import apiClient from './spotify';
+
+
 export default function TopMenu() {
+	const [searchInput, setSearchInput] = useState("");
 	const [image,setImage] = useState()
 	useEffect(() => {
 		apiClient.get('me').then(response =>{
@@ -22,8 +25,17 @@ export default function TopMenu() {
 				<input
 					type="text"
 					placeholder="Artist, Song, Lyrics and more"
-					id="search-bar"
+					// onKeyPress={event => {
+					// 	if(event.key == "Enter") {
+					// 		console.log("User pressed Search")
+
+					// 	}
+					// }}
+					// onChange ={event => setSearchInput(event.target.value)}
 				/>
+				{/* <button  onClick={event => { console.log("Clicked here")}}>
+					Search
+				</button> */}
 			</div>
 
 			<div class="alert-and-profile-content">

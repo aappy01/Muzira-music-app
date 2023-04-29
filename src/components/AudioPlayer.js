@@ -13,6 +13,7 @@ export default function AudioPlayer({currentTrack,currentIndex,total,setCurrentI
     const intervalRef = useRef();
     const isReady = useRef(false)
     const {duration} = audioRef.current
+    const currentPercentage = duration? (trackProgress/duration)*100: 0;
     const startTimer = ()=>{
         clearInterval(intervalRef.current)
 
@@ -23,7 +24,7 @@ export default function AudioPlayer({currentTrack,currentIndex,total,setCurrentI
                 setTrackProgress(audioRef.current.currentTime)
             }
         }, (1000));
-    }
+    };
 
     useEffect(()=>{
         if(isPlaying && audioRef.current){
@@ -71,11 +72,16 @@ export default function AudioPlayer({currentTrack,currentIndex,total,setCurrentI
             setCurrentIndex(currentIndex-1)
         }
     }
-    const currentPercentage = duration? (trackProgress/duration)*100: 0
+
+    const addZero = (n) => {
+        return n > 9 ? '' + n : '0' + n;
+
+    };
+    
     return(
         <div className='controls'>
             <div className='duration-container'>
-                <span className='duration'>0:00</span>
+                <span className='duration'>0:{addZero(Math.round(trackProgress))}</span>
                     <ProgressBar
                     percentage={currentPercentage}
                     isPlaying={isPlaying}/>
@@ -89,5 +95,6 @@ export default function AudioPlayer({currentTrack,currentIndex,total,setCurrentI
             total={total}
             />
         </div>
+        
     )
 }

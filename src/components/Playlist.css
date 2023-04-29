@@ -2,8 +2,7 @@
     width:90%;
     height: 80%;
     margin: 1rem auto 0;
-    padding-top: 1.5rem;
-    overflow-y: auto;
+    padding-top: 1rem;
     /* background-color: #1AC552; */
 }
 
@@ -18,14 +17,13 @@
     align-items: center;
     margin: 1.5rem auto 0;
     column-gap: 2rem;
-    row-gap:2rem;
-    
-
+    row-gap:1rem;
+    /* overflow-y: auto; */
 
 }
 .playlist-card{
     position: relative;
-    background-color:blue;
+    background-color:#141414;
     height: fit-content;
     color:#fff;
     width:70%;
