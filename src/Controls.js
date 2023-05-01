@@ -9,15 +9,15 @@ export default function Controls({
 		handleNext, 
 		handlePrev
 }) {
-	<Controls 
-		isPlaying={isPlaying}
-		setIsPlaying={setIsPlaying}
-		handleNext={handleNext}
-		handlePrev={handlePrev}
-		// total={total}
-		/>
+	// <Controls 
+	// 	isPlaying={isPlaying}
+	// 	setIsPlaying={setIsPlaying}
+	// 	handleNext={handleNext}
+	// 	handlePrev={handlePrev}
+	// 	// total={total}
+	// 	/>
 	return <IconContext.Provider value={{size:"35px", color:""}}>
-		<div className="controls-wrapper">
+		<div className="control-wrapper">
 			<div className="action-btn" onClick={handlePrev}>
 				<IoPlaySkipBack/>
 			</div>
