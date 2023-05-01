@@ -32,7 +32,7 @@ main{
 }
 
 .rectangle::-webkit-scrollbar-thumb {
-    background-color: purple;
+    background-color: #660099;
     border-radius: 5px
 }
 
